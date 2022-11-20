@@ -39,7 +39,7 @@ public class IndicadoresController {
 
     @GetMapping
     @Operation(
-    		summary = ("Apresentação Indicadores"),
+    		summary = ("Apresentação de Indicadores"),
     		description = ("Apresenta todos indicadores"),
     		tags = {"Indicadores"}, 
     		responses = {
@@ -55,7 +55,7 @@ public class IndicadoresController {
 
     @GetMapping("{id}")
     @Operation(
-    		summary = ("Apresentação Indicadores através do id"),
+    		summary = ("Apresentação de Indicadores através do id"),
     		description = ("Apresenta os indicadores cadastrados através do id"),
     		tags = {"Indicadores"}, 
     		responses = {
@@ -71,7 +71,7 @@ public class IndicadoresController {
 
     @GetMapping("/nomes/{nome}")
     @Operation(
-    		summary = ("Apresentação Indicadores através do nome"),
+    		summary = ("Apresentação de Indicadores através do nome"),
     		description = ("Apresenta os indicadores cadastrados através do nome"),
     		tags = {"Indicadores"}, 
     		responses = {

@@ -53,7 +53,7 @@ public class CadastroController {
 	//PF	
 	@PostMapping("/cpf")
 	@Operation(
-    		summary = ("Cadastro de usuario Cof"),
+    		summary = ("Cadastro de usuario Cpf"),
     		description = ("Cadastro de usuario cpf / pessoa fisica"),
     		tags = {"Cadastro"}, 
     		responses = {

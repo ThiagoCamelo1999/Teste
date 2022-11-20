@@ -33,7 +33,7 @@ public class AtivosController {
 
     @GetMapping
     @Operation(
-    		summary = ("Apresentação Ativos"),
+    		summary = ("Apresentação de Ativos"),
     		description = ("Apresenta os ativos cadastrados pela empresa responsável"),
     		tags = {"Ativos"}, 
     		responses = {
@@ -50,7 +50,7 @@ public class AtivosController {
     
     @GetMapping("{id}")
     @Operation(
-    		summary = ("Apresentação Ativos por id"),
+    		summary = ("Apresentação de Ativos por id"),
     		description = ("Apresenta os ativos cadastrados pela empresa responsável através do id do ativo"),
     		tags = {"Ativos"}, 
     		responses = {
@@ -66,7 +66,7 @@ public class AtivosController {
 
     @GetMapping("/nomes/{nome}")
     @Operation(
-    		summary = ("Apresentação Ativos por nome"),
+    		summary = ("Apresentação de Ativos por nome"),
     		description = ("Apresenta os ativos cadastrados pela empresa responsável através do nome do ativo"),
     		tags = {"Ativos"}, 
     		responses = {

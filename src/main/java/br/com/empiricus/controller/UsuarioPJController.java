@@ -29,7 +29,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
 @RequestMapping("/usuarios/PJ")
-@Tag(name = "Usuarios", description = "Controller para requisições Usuarios -> variáveis para verificações usuarios")
+@Tag(name = "Usuarios pj", description = "Controller para requisições Usuarios -> variáveis para verificações usuarios")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioPJController {
 	
@@ -40,7 +40,7 @@ public class UsuarioPJController {
 	@Operation(
     		summary = ("Apresentação todos usuarios "),
     		description = ("Apresenta os todos usuarios cadastrados"),
-    		tags = {"Usuarios"}, 
+    		tags = {"Usuarios pj"}, 
     		responses = {
     				@ApiResponse(description = "Online", responseCode = "200", 
     						content = @Content(mediaType = "application/json",
@@ -56,7 +56,7 @@ public class UsuarioPJController {
 	@Operation(
     		summary = ("Apresentação os usuarios atavéz do id"),
     		description = ("Apresenta os usuarios cadastrados atravéz do id"),
-    		tags = {"Usuarios"}, 
+    		tags = {"Usuarios pj"}, 
     		responses = {
     				@ApiResponse(description = "Online", responseCode = "200", 
     						content = @Content(mediaType = "application/json",
@@ -71,7 +71,7 @@ public class UsuarioPJController {
 	@Operation(
     		summary = ("Atualização dos usuarios atavéz do id"),
     		description = ("Atualização dos usuarios cadastrados atravéz do id"),
-    		tags = {"Usuarios"}, 
+    		tags = {"Usuarios pj"}, 
     		responses = {
     				@ApiResponse(description = "Online", responseCode = "200", 
     						content = @Content(mediaType = "application/json",
@@ -88,7 +88,7 @@ public class UsuarioPJController {
 	@Operation(
     		summary = ("Exclusão dos usuarios atavéz do id"),
     		description = ("Exclusão dos usuarios cadastrados atravéz do id"),
-    		tags = {"Usuarios"}, 
+    		tags = {"Usuarios pj"}, 
     		responses = {
     				@ApiResponse(description = "Online", responseCode = "200", 
     						content = @Content(mediaType = "application/json",

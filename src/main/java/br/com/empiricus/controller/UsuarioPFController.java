@@ -26,7 +26,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
 @RequestMapping("/usuarios/PF")
-@Tag(name = "Usuarios", description = "Controller para requisições Usuarios -> variáveis para verificações usuarios")
+@Tag(name = "Usuarios PF", description = "Controller para requisições Usuarios -> variáveis para verificações usuarios")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioPFController {
 	
@@ -36,7 +36,16 @@ public class UsuarioPFController {
 
 		
 		@GetMapping
-		
+		@Operation(
+	    		summary = ("Apresentação de todos usuarios"),
+	    		description = ("Apresenta os usuarios cadastrados"),
+	    		tags = {"Usuarios PF"}, 
+	    		responses = {
+	    				@ApiResponse(description = "Online", responseCode = "200", 
+	    						content = @Content(mediaType = "application/json",
+	    						array = @ArraySchema(schema = @Schema(implementation = Ativos.class))
+	    						)) }
+	    		)
 		public List<ClientePF> getAllUser(){
 			return userrPFService.getAllUserPF();
 		}
@@ -44,9 +53,9 @@ public class UsuarioPFController {
 		
 		@GetMapping("{id}")
 		@Operation(
-	    		summary = ("Apresentação os usuarios atavéz do id"),
+	    		summary = ("Apresentação dos usuarios atavéz do id"),
 	    		description = ("Apresenta os usuarios cadastrados atravéz do id"),
-	    		tags = {"Usuarios"}, 
+	    		tags = {"Usuarios PF"}, 
 	    		responses = {
 	    				@ApiResponse(description = "Online", responseCode = "200", 
 	    						content = @Content(mediaType = "application/json",
@@ -62,7 +71,7 @@ public class UsuarioPFController {
 		@Operation(
 	    		summary = ("Atualização dos usuarios atavéz do id"),
 	    		description = ("Atualização dos usuarios cadastrados atravéz do id"),
-	    		tags = {"Usuarios"}, 
+	    		tags = {"Usuarios PF"}, 
 	    		responses = {
 	    				@ApiResponse(description = "Online", responseCode = "200", 
 	    						content = @Content(mediaType = "application/json",
@@ -79,7 +88,7 @@ public class UsuarioPFController {
 		@Operation(
 	    		summary = ("Exclusão dos usuarios atavéz do id"),
 	    		description = ("Exclusão dos usuarios cadastrados atravéz do id"),
-	    		tags = {"Usuarios"}, 
+	    		tags = {"Usuarios PF"}, 
 	    		responses = {
 	    				@ApiResponse(description = "Online", responseCode = "200", 
 	    						content = @Content(mediaType = "application/json",
